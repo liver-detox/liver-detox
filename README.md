@@ -20,6 +20,16 @@ flowchart LR
 
 This is a conceptual workflow with explicit, manual handoffs—not an automatic software integration.
 
+### Decision readiness at a glance
+
+| Question | Tool | Minimal evidence |
+| --- | --- | --- |
+| Is enough mature evidence reachable? | EvidenceReach | A power and sample-reach scenario. |
+| Was evidence eligible at the cutoff? | Prospective Validation Ledger | A deterministic eligible/rejected receipt. |
+| Is the recorded decision supported? | Decision Evidence Ledger | A verifiable digest-only record. |
+
+The tools can be used separately or in sequence; handoffs remain manual.
+
 ### [EvidenceReach](https://github.com/liver-detox/evidence-reach)
 
 Plans statistical power and evidence-sample reachability. It calculates two-sided one-sample t-test power, required mature sample size, minimum detectable effect, and deterministic evidence-supply scenarios.
