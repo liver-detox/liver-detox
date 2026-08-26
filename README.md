@@ -1,26 +1,24 @@
 # liver-detox
 
-Local-first, privacy-first open-source tools for auditable evidence and decisions.
+Local-first, privacy-first tools for making evidence and decisions easier to
+check.
 
-I maintain two research-tool lines and one independent product:
+## Start with your task
 
-- **Analyst research:** source agreement and verifiable research releases.
-- **Quantitative research:** evidence reach, point-in-time eligibility, and traceable decision records.
-- **Independent product:** a local-first Bazi and Zi Wei Dou Shu calculator.
+### I have two local sources and need to know whether they agree
 
-> These are early-stage open-source projects. They do not claim production adoption, external validation, or investment performance.
-
-## Analyst research
-
-### [SourceQuorum](https://github.com/liver-detox/SourceQuorum)
-
-SourceQuorum compares explicitly supplied local sources and produces a content-addressed research release. Mismatches are rejected. It checks declared agreement and release integrity, not source truth or investment conclusions.
+[SourceQuorum](https://github.com/liver-detox/SourceQuorum) compares explicitly
+supplied local sources. Its synthetic [quickstart](https://github.com/liver-detox/SourceQuorum#quickstart)
+returns accepted or rejected and, when records agree, a content-addressed
+research release.
 
 [`v0.1.0`](https://github.com/liver-detox/SourceQuorum/releases/tag/v0.1.0) · 486 automated tests · [CI](https://github.com/liver-detox/SourceQuorum/actions) · [Apache-2.0](https://github.com/liver-detox/SourceQuorum/blob/main/LICENSE)
 
-## Quantitative research
+### I want to plan, qualify, and retain the evidence behind a research decision
 
-Three small tools keep three questions separate:
+Three tools keep three questions separate. They can be used alone or in a
+manual sequence; the [synthetic walkthrough](https://github.com/liver-detox/prospective-validation-ledger/blob/main/docs/SYNTHETIC_THREE_TOOL_WORKFLOW.md)
+shows the handoffs.
 
 ```mermaid
 flowchart LR
@@ -28,34 +26,32 @@ flowchart LR
     PVL --> DEL["Decision Evidence Ledger<br/>Which artifacts support the decision?"]
 ```
 
-This is a conceptual workflow with explicit, manual handoffs—not an automatic software integration.
+- **[EvidenceReach](https://github.com/liver-detox/evidence-reach):** estimate
+  required N and scenario reachability — [`v0.1.0`](https://github.com/liver-detox/evidence-reach/releases/tag/v0.1.0) · 63 tests · [CI](https://github.com/liver-detox/evidence-reach/actions)
+- **[Prospective Validation Ledger](https://github.com/liver-detox/prospective-validation-ledger):**
+  produce an eligible/rejected cutoff receipt — [`v0.1.0`](https://github.com/liver-detox/prospective-validation-ledger/releases/tag/v0.1.0) · 42 tests · [CI](https://github.com/liver-detox/prospective-validation-ledger/actions)
+- **[Decision Evidence Ledger](https://github.com/liver-detox/decision-evidence-ledger):**
+  retain a verifiable digest-only record — [`v0.1.0`](https://github.com/liver-detox/decision-evidence-ledger/releases/tag/v0.1.0) · 153 tests · [CI](https://github.com/liver-detox/decision-evidence-ledger/actions)
 
-| Question | Tool | Minimal evidence |
-| --- | --- | --- |
-| Is enough mature evidence reachable? | [EvidenceReach](https://github.com/liver-detox/evidence-reach) | A power and sample-reach scenario. |
-| Was evidence eligible at the cutoff? | [Prospective Validation Ledger](https://github.com/liver-detox/prospective-validation-ledger) | A deterministic eligible/rejected receipt. |
-| Is the recorded decision supported? | [Decision Evidence Ledger](https://github.com/liver-detox/decision-evidence-ledger) | A verifiable digest-only record. |
+### I want a local Bazi and Zi Wei Dou Shu calculator with review records
 
-The tools can be used separately or in sequence. The [synthetic three-tool walkthrough](https://github.com/liver-detox/prospective-validation-ledger/blob/main/docs/SYNTHETIC_THREE_TOOL_WORKFLOW.md) demonstrates the intended boundaries without using a real study or financial result.
+[Bazi Ziwei Calculator](https://github.com/liver-detox/bazi-ziwei-calculator) is
+an independent local product for dual-chart calculation, candidate review,
+revision history, and structured exports. v0.3 adds one-click AI text copying
+after a candidate has been confirmed.
 
-- **EvidenceReach** — [`v0.1.0`](https://github.com/liver-detox/evidence-reach/releases/tag/v0.1.0) · 63 automated tests · [CI](https://github.com/liver-detox/evidence-reach/actions) · [Apache-2.0](https://github.com/liver-detox/evidence-reach/blob/main/LICENSE)
-- **Prospective Validation Ledger** — [`v0.1.0`](https://github.com/liver-detox/prospective-validation-ledger/releases/tag/v0.1.0) · 42 automated tests · [CI](https://github.com/liver-detox/prospective-validation-ledger/actions) · [Apache-2.0](https://github.com/liver-detox/prospective-validation-ledger/blob/main/LICENSE)
-- **Decision Evidence Ledger** — [`v0.1.0`](https://github.com/liver-detox/decision-evidence-ledger/releases/tag/v0.1.0) · 153 automated tests · [CI](https://github.com/liver-detox/decision-evidence-ledger/actions) · [Apache-2.0](https://github.com/liver-detox/decision-evidence-ledger/blob/main/LICENSE)
+[`v0.3.0`](https://github.com/liver-detox/bazi-ziwei-calculator/releases/tag/v0.3.0) · [Quickstart](https://github.com/liver-detox/bazi-ziwei-calculator#五分钟开始使用macos) · [CI](https://github.com/liver-detox/bazi-ziwei-calculator/actions) · [MIT](https://github.com/liver-detox/bazi-ziwei-calculator/blob/main/LICENSE)
 
-## Independent product
-
-### [Bazi Ziwei Calculator](https://github.com/liver-detox/bazi-ziwei-calculator)
-
-A local-first Bazi and Zi Wei Dou Shu calculator for traceable chart calculation, candidate review, revision history, and structured exports. It provides calculation and review records, not fortune-telling conclusions or professional advice.
-
-[`v0.2.0`](https://github.com/liver-detox/bazi-ziwei-calculator/releases/tag/v0.2.0) · [CI](https://github.com/liver-detox/bazi-ziwei-calculator/actions) · [MIT](https://github.com/liver-detox/bazi-ziwei-calculator/blob/main/LICENSE)
-
-## Shared boundaries
+## What these projects share
 
 - Local-first workflows with deliberately narrow scopes.
-- Synthetic public examples; no real accounts, holdings, trades, credentials, or private research data.
-- Deterministic, inspectable outputs and explicit limitations.
-- No investment advice, return promises, or automatic trading claims.
+- Synthetic public examples and inspectable outputs.
+- No real accounts, holdings, trades, credentials, or private research data.
+- Explicit limits; no investment advice, return promises, or automatic trading.
+
+## Project status and boundaries
+
+> These are early-stage open-source projects. They do not claim production adoption, external validation, or investment performance.
 
 ## Authorship
 
