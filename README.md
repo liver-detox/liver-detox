@@ -27,11 +27,11 @@ flowchart LR
 ```
 
 - **[EvidenceReach](https://github.com/liver-detox/evidence-reach):** estimate
-  required N and scenario reachability — [`v0.1.0`](https://github.com/liver-detox/evidence-reach/releases/tag/v0.1.0) · 63 tests · [CI](https://github.com/liver-detox/evidence-reach/actions)
+  required mature samples, collection shortfalls, and target dates — [`v0.1.1`](https://github.com/liver-detox/evidence-reach/releases/tag/v0.1.1) · [Quickstart](https://github.com/liver-detox/evidence-reach#quickstart) · [CI](https://github.com/liver-detox/evidence-reach/actions)
 - **[Prospective Validation Ledger](https://github.com/liver-detox/prospective-validation-ledger):**
-  produce an eligible/rejected cutoff receipt — [`v0.1.0`](https://github.com/liver-detox/prospective-validation-ledger/releases/tag/v0.1.0) · 42 tests · [CI](https://github.com/liver-detox/prospective-validation-ledger/actions)
+  create a local validation bundle and explain eligible/rejected cutoff results — [`v0.2.0`](https://github.com/liver-detox/prospective-validation-ledger/releases/tag/v0.2.0) · [Quickstart](https://github.com/liver-detox/prospective-validation-ledger#quickstart) · [CI](https://github.com/liver-detox/prospective-validation-ledger/actions)
 - **[Decision Evidence Ledger](https://github.com/liver-detox/decision-evidence-ledger):**
-  retain a verifiable digest-only record — [`v0.1.0`](https://github.com/liver-detox/decision-evidence-ledger/releases/tag/v0.1.0) · 153 tests · [CI](https://github.com/liver-detox/decision-evidence-ledger/actions)
+  retain a verifiable digest-only decision record with actionable CLI guidance — [`v0.2.1`](https://github.com/liver-detox/decision-evidence-ledger/releases/tag/v0.2.1) · [Quickstart](https://github.com/liver-detox/decision-evidence-ledger#quickstart) · [CI](https://github.com/liver-detox/decision-evidence-ledger/actions)
 
 ### I want a local Bazi and Zi Wei Dou Shu calculator with review records
 
